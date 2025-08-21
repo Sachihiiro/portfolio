@@ -10,7 +10,7 @@
         >
           <h1 class="hero-main-title mb-6">
             Software engineer,<br />
-            web developer,<br />
+            Web developer,<br />
             AWS cloud engineer
           </h1>
           <p class="hero-subtitle mb-8">
