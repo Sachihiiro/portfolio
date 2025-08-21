@@ -5,48 +5,33 @@
         <!-- Left: Text content -->
         <v-col
           cols="12"
-          md="6"
-          class="d-flex flex-column justify-center align-center align-md-start"
+          md="8"
+          class="d-flex flex-column justify-center align-start"
         >
-          <div class="mb-8">
-            <v-chip
-              v-for="tech in techs"
-              :key="tech"
-              class="mr-2 mb-2 chip"
-              variant="flat"
-            >
-              {{ tech }}
-            </v-chip>
-          </div>
-          <h1 class="hero-title mb-0">Hello, I'm</h1>
-          <h1 class="hero-title hero-title-blue mb-2">Rex Sobrido.</h1>
-          <p class="hero-desc mb-8">
-            An experienced full-stack website developer with a passion for
-            crafting unique digital experiences.
+          <
+          <h1 class="hero-main-title mb-6">
+            Software engineer,<br />
+            web developer,<br />
+            AWS cloud engineer
+          </h1>
+          <p class="hero-subtitle mb-8">
+            I'm Rex Sobrido, an experienced web developer and AWS cloud engineer
+            passionate about learning and building open-source software that is
+            beneficial to developers and the world at large.
           </p>
-          <div>
+          <div class="hero-socials">
             <v-btn
-              :color="accent"
-              size="large"
-              variant="flat"
-              class="mr-4"
-              href="mailto:wendo@example.com"
+              v-for="s in socials"
+              :key="s.label"
+              :href="s.link"
+              target="_blank"
+              variant="text"
+              class="social-btn"
+              :aria-label="s.label"
             >
-              GET IN TOUCH
+              <v-icon class="mr-2" :icon="s.icon" size="22" />
+              <span>{{ s.label }}</span>
             </v-btn>
-            <v-btn size="large" variant="outlined" href="#about">
-              LEARN MORE
-            </v-btn>
-          </div>
-        </v-col>
-        <!-- Right: Image -->
-        <v-col cols="12" md="6" class="d-flex justify-center align-center">
-          <div class="hero-img-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-              alt="Hero"
-              class="hero-img"
-            />
           </div>
         </v-col>
       </v-row>
@@ -57,89 +42,73 @@
 <script setup>
 const gradientBg =
   "linear-gradient(180deg, #181F2F 0%, #23293b 60%, #DEECFB 100%)";
-const accent = "#5d7cff"; // Or #1666BA if that's your blue
-const techs = ["VueJs", "vuetify", "nuxtjs"];
+
+// Use Material Design Icons or Font Awesome (Vuetify supports mdi by default)
+const socials = [
+  { label: "GitHub", icon: "mdi-github", link: "https://github.com/" },
+  { label: "X", icon: "mdi-twitter", link: "https://x.com/" },
+  { label: "Linkedin", icon: "mdi-linkedin", link: "https://linkedin.com/" },
+  { label: "Instagram", icon: "mdi-instagram", link: "https://instagram.com/" },
+  {
+    label: "Stackoverflow",
+    icon: "mdi-stack-overflow",
+    link: "https://stackoverflow.com/",
+  },
+  { label: "Gitlab", icon: "mdi-gitlab", link: "https://gitlab.com/" },
+  // Add more as needed
+];
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+
 .hero-section {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #181f2f 0%, #23293b 70%, #deecfb 100%);
+  background: linear-gradient(180deg, #181f2f 0%, #23293b 60%, #deecfb 100%);
 }
-
-.hero-title,
-.hero-title-blue,
-.hero-desc {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-.chip {
-  background: #282b34;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 20px;
-  text-transform: lowercase;
-  letter-spacing: 0.5px;
-}
-
-.hero-title {
-  font-size: 3rem;
-  line-height: 1.1;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -1px;
-}
-.hero-title-blue {
-  color: #5d7cff;
+.hero-main-title {
+  font-family: "Space Grotesk", "Share Tech Mono", "monospace";
   font-size: 3.5rem;
   font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 0.6em;
 }
-
-.hero-desc {
-  font-size: 1.15rem;
+.hero-subtitle {
   color: #b8c1db;
-  margin-top: 18px;
-  max-width: 520px;
+  font-size: 1.35rem;
+  max-width: 800px;
+  margin-bottom: 2em;
 }
-
-.hero-img-wrapper {
-  background: #141624;
-  border-radius: 32px;
-  overflow: hidden;
-  box-shadow: 0 4px 40px 0 rgba(30, 40, 90, 0.14);
-  max-width: 600px;
-  width: 100%;
-  min-height: 320px;
+.hero-socials {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
 }
-.hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 32px;
-  object-fit: cover;
-  background: #222;
+.social-btn {
+  color: #e0e0e0 !important;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-transform: none;
+  background: transparent !important;
+  padding: 0;
+  min-width: 0;
+  transition: color 0.2s;
 }
-
+.social-btn:hover {
+  color: #5d7cff !important;
+  background: rgba(93, 124, 255, 0.07) !important;
+}
 @media (max-width: 960px) {
-  .hero-section {
-    min-height: 60vh;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  .hero-main-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
   }
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-title-blue {
-    font-size: 2.2rem;
-  }
-  .hero-img-wrapper {
-    max-width: 320px;
-    min-height: 180px;
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
 </style>
