@@ -6,8 +6,8 @@ export const lightBlue = "#DEECFB";
 export const navItems = [
   { text: "Home", to: "#home" },
   { text: "Projects", to: "#projects" },
-  { text: "Experience", to: "#experience" },
   { text: "Services", to: "#services" },
+  { text: "Experience", to: "#experience" },
   { text: "About", to: "#about" },
 ];
 
