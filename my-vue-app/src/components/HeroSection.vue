@@ -8,7 +8,6 @@
           md="8"
           class="d-flex flex-column justify-center align-start"
         >
-          <
           <h1 class="hero-main-title mb-6">
             Software engineer,<br />
             web developer,<br />

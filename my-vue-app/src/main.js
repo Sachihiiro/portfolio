@@ -10,10 +10,13 @@ import * as directives from "vuetify/directives";
 
 // Import a Vuetify theme (optional)
 import "@mdi/font/css/materialdesignicons.css";
-
+import "vuetify/styles";
 const vuetify = createVuetify({
   components,
   directives,
+  icons: {
+    defaultSet: "mdi", // Use 'mdi' for Material Design Icons
+  },
 });
 
 createApp(App).use(vuetify).mount("#app");
