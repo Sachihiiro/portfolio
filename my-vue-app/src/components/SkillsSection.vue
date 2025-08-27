@@ -5,7 +5,13 @@
     </h2>
     <div class="skills-grid">
       <div v-for="skill in skills" :key="skill.name" class="skill-card">
-        <v-icon v-if="skill.icon" :color="iconColor" size="32" class="mb-2" />
+        <v-icon
+          v-if="skill.icon"
+          :icon="skill.icon"
+          :color="iconColor"
+          size="32"
+          class="mb-2"
+        />
         <div class="skill-name">{{ skill.name }}</div>
         <div class="skill-years-text">
           {{ skill.years }} yr{{ skill.years > 1 ? "s" : "" }}

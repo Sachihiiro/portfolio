@@ -5,6 +5,13 @@
     </h2>
     <v-row justify="center">
       <v-col cols="12" md="6" class="text-center">
+        <!-- Profile Image -->
+        <v-avatar size="120" class="mb-5">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Profile photo"
+          />
+        </v-avatar>
         <div class="about-content">
           <p class="grey--text text--darken-1">
             I'm Rex Roy Sobrido, a Software Engineer and
@@ -49,7 +56,7 @@ defineProps(["deepBlue", "lightBlue"]);
 
 <style scoped>
 .section {
-  padding: 64px 0 48px 0; /* Increased bottom padding for more space */
+  padding: 64px 0 48px 0;
 }
 .about-content {
   max-width: 650px;

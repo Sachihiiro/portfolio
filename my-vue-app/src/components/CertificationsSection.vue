@@ -9,7 +9,7 @@
     </h2>
     <v-row justify="center">
       <v-col cols="12" md="10">
-        <v-row justify="center" align="stretch" dense>
+        <v-row justify="start" align="stretch" dense>
           <v-col
             v-for="(cert, i) in paginatedCerts"
             :key="i"
