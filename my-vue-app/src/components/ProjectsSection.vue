@@ -4,10 +4,10 @@
       Projects
     </h2>
     <v-row justify="center">
-      <v-col cols="12" md="5" lg="4">
+      <v-col cols="12" md="7" lg="5">
         <v-carousel
           hide-delimiter-background
-          height="260"
+          height="460"
           cycle
           show-arrows="hover"
           :color="deepBlue"
@@ -16,27 +16,39 @@
           <v-carousel-item v-for="(project, i) in projects" :key="i">
             <v-card
               flat
-              class="mx-auto"
-              max-width="350"
-              :style="{ background: '#fff' }"
+              class="mx-auto pa-4 elevation-3 d-flex flex-column justify-space-between"
+              :style="{
+                background: '#fff',
+                maxWidth: '430px',
+                minHeight: '410px',
+                borderRadius: '14px',
+                margin: '24px auto',
+              }"
             >
-              <v-img :src="project.image" height="120" cover />
-              <v-card-title
-                class="font-weight-bold"
-                :style="{ color: deepBlue }"
-              >
-                {{ project.title }}
-              </v-card-title>
-              <v-card-text>
-                {{ project.description }}
-              </v-card-text>
-              <v-card-actions>
+              <v-img
+                :src="project.image"
+                height="160"
+                cover
+                class="rounded-lg mb-3"
+              />
+              <div>
+                <v-card-title
+                  class="font-weight-bold"
+                  :style="{ color: deepBlue, fontSize: '1.35rem' }"
+                >
+                  {{ project.title }}
+                </v-card-title>
+                <v-card-text style="font-size: 1.1rem; margin-bottom: 1.5rem">
+                  {{ project.description }}
+                </v-card-text>
+              </div>
+              <v-card-actions class="justify-end" style="padding-bottom: 32px">
                 <v-btn
                   :href="project.link"
                   target="_blank"
                   :color="deepBlue"
                   variant="flat"
-                  class="white--text ml-auto"
+                  class="white--text"
                 >
                   View
                 </v-btn>
@@ -48,9 +60,11 @@
     </v-row>
   </section>
 </template>
+
 <script setup>
 defineProps(["projects", "deepBlue", "lightBlue"]);
 </script>
+
 <style scoped>
 .section {
   padding: 64px 0 32px 0;

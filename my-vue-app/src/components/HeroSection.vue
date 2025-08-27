@@ -39,23 +39,11 @@
 </template>
 
 <script setup>
+import { socials } from "../constants";
 const gradientBg =
   "linear-gradient(180deg, #181F2F 0%, #23293b 60%, #DEECFB 100%)";
 
 // Use Material Design Icons or Font Awesome (Vuetify supports mdi by default)
-const socials = [
-  { label: "GitHub", icon: "mdi-github", link: "https://github.com/" },
-  { label: "X", icon: "mdi-twitter", link: "https://x.com/" },
-  { label: "Linkedin", icon: "mdi-linkedin", link: "https://linkedin.com/" },
-  { label: "Instagram", icon: "mdi-instagram", link: "https://instagram.com/" },
-  {
-    label: "Stackoverflow",
-    icon: "mdi-stack-overflow",
-    link: "https://stackoverflow.com/",
-  },
-  { label: "Gitlab", icon: "mdi-gitlab", link: "https://gitlab.com/" },
-  // Add more as needed
-];
 </script>
 
 <style scoped>

@@ -84,3 +84,108 @@ export const experiences = [
       "Built and maintained client websites using HTML, CSS, and JavaScript. Improved site performance and accessibility.",
   },
 ];
+
+export const socials = [
+  { label: "GitHub", icon: "mdi-github", link: "https://github.com/" },
+  { label: "Linkedin", icon: "mdi-linkedin", link: "https://linkedin.com/" },
+  { label: "Instagram", icon: "mdi-instagram", link: "https://instagram.com/" },
+  { label: "Email", icon: "mdi-email", link: "mailto:your.email@example.com" }, // Replace with your actual email
+  // Add more as needed
+];
+
+export const skills = [
+  { name: "JavaScript", icon: "mdi-github" },
+  { name: "TypeScript", icon: "mdi-language-typescript" },
+  { name: "Vue.js", icon: "mdi-vuejs" },
+  { name: "Node.js", icon: "mdi-nodejs" },
+  { name: "AWS", icon: "mdi-aws" },
+  { name: "Docker", icon: "mdi-docker" },
+  { name: "HTML5", icon: "mdi-language-html5" },
+  { name: "CSS3", icon: "mdi-language-css3" },
+  { name: "Git", icon: "mdi-git" },
+];
+
+export const articles = [
+  {
+    title: "Building a Portfolio with Vue & Vuetify",
+    date: "June 2024",
+    summary:
+      "A step-by-step guide to creating a professional portfolio site using Vue.js and Vuetify.",
+    link: "#",
+  },
+  {
+    title: "Deploying Vue Apps on AWS",
+    date: "May 2024",
+    summary:
+      "Learn how to deploy your Vue applications on AWS using S3, CloudFront, and CI/CD.",
+    link: "#",
+  },
+  {
+    title: "Mastering Vue 3 Composition API",
+    date: "April 2024",
+    summary:
+      "An in-depth look at the Vue 3 Composition API for scalable front-end apps.",
+    link: "#",
+  },
+  {
+    title: "State Management in Vue with Pinia",
+    date: "March 2024",
+    summary:
+      "A modern approach to state management using Pinia in Vue applications.",
+    link: "#",
+  },
+  {
+    title: "Testing Vue Components with Vitest",
+    date: "February 2024",
+    summary:
+      "How to write fast and reliable tests for your Vue components using Vitest.",
+    link: "#",
+  },
+  {
+    title: "Integrating REST APIs with Axios in Vue",
+    date: "January 2024",
+    summary: "A guide to connecting your Vue apps to RESTful APIs with Axios.",
+    link: "#",
+  },
+  {
+    title: "Vue Router Advanced Patterns",
+    date: "December 2023",
+    summary:
+      "Learn about lazy loading, nested routes, and navigation guards in Vue Router.",
+    link: "#",
+  },
+  {
+    title: "Building Reusable Components in Vue",
+    date: "November 2023",
+    summary:
+      "Best practices for making your Vue components reusable and maintainable.",
+    link: "#",
+  },
+  {
+    title: "Optimizing Vue Apps for Performance",
+    date: "October 2023",
+    summary: "Tips and tricks to make your Vue apps faster and more efficient.",
+    link: "#",
+  },
+  {
+    title: "Styling Vue Apps with Vuetify",
+    date: "September 2023",
+    summary: "Harness the full power of Vuetify for beautiful, responsive UIs.",
+    link: "#",
+  },
+];
+
+const certifications = [
+  {
+    title: "Vue Mastery Certificate",
+    description: "Completed Advanced Vue.js Course.",
+    image: "https://your-image-url.com/vue-mastery.png",
+    link: "https://cert-url.com/vue-mastery",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    description: "Cloud fundamentals and AWS services.",
+    image: "https://your-image-url.com/aws-cert.png",
+    link: "https://cert-url.com/aws-cp",
+  },
+];

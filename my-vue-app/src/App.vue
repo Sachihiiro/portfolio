@@ -15,8 +15,18 @@
     <v-main>
       <v-container fluid class="pa-0">
         <HeroSection :deepBlue="deepBlue" :lightBlue="lightBlue" />
+        <SkillsSection
+          :skills="skills"
+          :deepBlue="deepBlue"
+          :lightBlue="lightBlue"
+        />
         <ProjectsSection
           :projects="projects"
+          :deepBlue="deepBlue"
+          :lightBlue="lightBlue"
+        />
+        <BlogSection
+          :articles="articles"
           :deepBlue="deepBlue"
           :lightBlue="lightBlue"
         />
@@ -47,7 +57,8 @@ import ServicesSection from "./components/ServicesSection.vue";
 import ExperienceSection from "./components/ExperienceSection.vue";
 import AboutSection from "./components/AboutSection.vue";
 import AppFooter from "./components/AppFooter.vue";
-
+import SkillsSection from "./components/SkillsSection.vue";
+import BlogSection from "./components/BlogSection.vue";
 // Import constants
 import {
   deepBlue,
@@ -56,6 +67,8 @@ import {
   projects,
   services,
   experiences,
+  skills,
+  articles,
 } from "./constants.js";
 
 const drawer = ref(false);
