@@ -45,7 +45,13 @@
           :deepBlue="deepBlue"
           :lightBlue="lightBlue"
         />
+        <Testimonials
+          :testimonials="testimonials"
+          :deepBlue="deepBlue"
+          :lightBlue="lightBlue"
+        />
         <AboutSection :deepBlue="deepBlue" :lightBlue="lightBlue" />
+        <Contact :deepBlue="deepBlue" :lightBlue="lightBlue" />
       </v-container>
     </v-main>
     <AppFooter :deepBlue="deepBlue" />
@@ -65,6 +71,8 @@ import AppFooter from "./components/AppFooter.vue";
 import SkillsSection from "./components/SkillsSection.vue";
 import BlogSection from "./components/BlogSection.vue";
 import CertificationsSection from "./components/CertificationsSection.vue";
+import Testimonials from "./components/Testimonials.vue";
+import Contact from "./components/Contact.vue";
 // Import constants
 import {
   deepBlue,
@@ -76,6 +84,7 @@ import {
   skills,
   articles,
   certifications,
+  testimonials,
 } from "./constants.js";
 
 const drawer = ref(false);

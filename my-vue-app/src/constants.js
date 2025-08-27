@@ -213,3 +213,18 @@ export const certifications = [
     link: "#",
   },
 ];
+export const testimonials = [
+  {
+    name: "Alice Johnson",
+    role: "Project Manager at Acme Corp",
+    text: "Working with you was a fantastic experience! Your attention to detail and dedication made our project a success.",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Bob Smith",
+    role: "Lead Developer at Example Inc.",
+    text: "You delivered high quality code and were always proactive in solving problems.",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  // Add more testimonials as needed
+];
