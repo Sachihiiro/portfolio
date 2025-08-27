@@ -45,8 +45,45 @@
                 Send Message
               </v-btn>
             </v-form>
+            <!-- Confirmation message -->
+            <div
+              v-if="confirmation"
+              class="mt-4 text-center"
+              style="color: #2e7d32; font-weight: 500"
+            >
+              <v-icon color="success" class="mr-2">mdi-check-circle</v-icon>
+              Thank you for your message! I will get back to you soon.
+            </div>
           </v-card-text>
         </v-card>
+        <!-- Alternative contact methods -->
+        <div class="alternative-contact mt-6 text-center">
+          <div style="font-size: 1.08rem; color: #333; font-weight: 500">
+            Or reach me via:
+          </div>
+          <div class="mt-3">
+            <v-btn
+              href="mailto:rexroys@gmail.com"
+              target="_blank"
+              variant="text"
+              color="primary"
+              class="mx-2"
+            >
+              <v-icon left size="20">mdi-email</v-icon>
+              Email
+            </v-btn>
+            <v-btn
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              variant="text"
+              color="primary"
+              class="mx-2"
+            >
+              <v-icon left size="20">mdi-linkedin</v-icon>
+              LinkedIn
+            </v-btn>
+          </div>
+        </div>
       </v-col>
     </v-row>
   </section>
@@ -65,6 +102,7 @@ const form = ref({
   email: "",
   message: "",
 });
+const confirmation = ref(false);
 const rules = {
   required: (v) => !!v || "This field is required",
   email: (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
@@ -72,9 +110,10 @@ const rules = {
 function submit() {
   if (!valid.value) return;
   // Replace with your API/email logic
-  alert("Thank you for your message!");
+  confirmation.value = true;
   form.value = { name: "", email: "", message: "" };
   formRef.value.resetValidation();
+  setTimeout(() => (confirmation.value = false), 4000); // Hide after 4 seconds
 }
 </script>
 
@@ -82,11 +121,14 @@ function submit() {
 .contact-section {
   padding: 64px 0 64px 0;
   border-radius: 16px;
-  margin-top: 0; /* Optional: add margin-top if you want more space from About */
 }
 .contact-card {
   background: #fff;
   padding: 2rem;
   box-shadow: 0 2px 12px rgba(21, 101, 192, 0.08);
+}
+.alternative-contact v-btn {
+  font-size: 1rem;
+  text-transform: none;
 }
 </style>
