@@ -110,6 +110,18 @@ export const experiences = [
     period: "2022 – Present",
     description:
       "Developing user interfaces with Vue and Vuetify. Collaborated with designers to create seamless web experiences.",
+    responsibilities: [
+      "Implement responsive layouts and reusable components.",
+      "Optimize application performance and accessibility.",
+      "Coordinate with backend team for API integration.",
+    ],
+    achievements: [
+      "Reduced page load times by 35%.",
+      "Led migration to Vuetify 3.",
+    ],
+    tech: ["Vue", "Vuetify", "JavaScript", "TypeScript", "SASS"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+    current: true,
   },
   {
     company: "Webify Solutions",
@@ -117,6 +129,18 @@ export const experiences = [
     period: "2020 – 2022",
     description:
       "Built and maintained client websites using HTML, CSS, and JavaScript. Improved site performance and accessibility.",
+    responsibilities: [
+      "Developed landing pages and custom widgets.",
+      "Conducted code reviews and troubleshooting.",
+      "Ensured cross-browser compatibility.",
+    ],
+    achievements: [
+      "Recognized for delivering projects ahead of deadlines.",
+      "Enhanced site accessibility for major clients.",
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "jQuery"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    current: false,
   },
 ];
 
@@ -129,15 +153,15 @@ export const socials = [
 ];
 
 export const skills = [
-  { name: "JavaScript", icon: "mdi-github" },
-  { name: "TypeScript", icon: "mdi-language-typescript" },
-  { name: "Vue.js", icon: "mdi-vuejs" },
-  { name: "Node.js", icon: "mdi-nodejs" },
-  { name: "AWS", icon: "mdi-aws" },
-  { name: "Docker", icon: "mdi-docker" },
-  { name: "HTML5", icon: "mdi-language-html5" },
-  { name: "CSS3", icon: "mdi-language-css3" },
-  { name: "Git", icon: "mdi-git" },
+  { name: "JavaScript", icon: "mdi-github", years: 3 },
+  { name: "TypeScript", icon: "mdi-language-typescript", years: 2 },
+  { name: "Vue.js", icon: "mdi-vuejs", years: 2 },
+  { name: "Node.js", icon: "mdi-nodejs", years: 1 },
+  { name: "AWS", icon: "mdi-aws", years: 1 },
+  { name: "Docker", icon: "mdi-docker", years: 2 },
+  { name: "HTML5", icon: "mdi-language-html5", years: 3 },
+  { name: "CSS3", icon: "mdi-language-css3", years: 3 },
+  { name: "Git", icon: "mdi-git", years: 3 },
 ];
 
 export const articles = [
@@ -225,8 +249,8 @@ export const certifications = [
     title: "Vue Mastery Certificate",
     issuer: "Vue Mastery",
     description: "Completed Advanced Vue.js Course.",
-    logo: "", // leave empty to use an icon
-    icon: "mdi-vuejs", // use a relevant MDI icon!
+    logo: "", // Add a logo URL here if available
+    icon: "mdi-vuejs",
     date: "Jan 2024",
     link: "https://cert-url.com/vue-mastery",
   },
@@ -234,7 +258,7 @@ export const certifications = [
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
     description: "Cloud fundamentals and AWS services.",
-    logo: "", // leave empty to use an icon
+    logo: "", // Add logo URL for AWS if available
     icon: "mdi-aws",
     date: "May 2024",
     link: "https://cert-url.com/aws-cp",
@@ -243,7 +267,7 @@ export const certifications = [
     title: "Google Professional Cloud Architect",
     issuer: "Google",
     description: "Designs and manages secure cloud solutions.",
-    logo: "",
+    logo: "", // Add logo URL for Google if available
     icon: "mdi-google-cloud",
     date: "Apr 2023",
     link: "https://cert-url.com/google-cloud",
@@ -252,7 +276,7 @@ export const certifications = [
     title: "General Certificate",
     issuer: "My University",
     description: "Awarded for academic excellence.",
-    logo: "",
+    logo: "", // Add logo URL for university if available
     icon: "mdi-certificate",
     date: "June 2022",
     link: "#",
