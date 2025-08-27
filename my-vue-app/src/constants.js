@@ -175,17 +175,41 @@ export const articles = [
   },
 ];
 
-const certifications = [
+export const certifications = [
   {
     title: "Vue Mastery Certificate",
+    issuer: "Vue Mastery",
     description: "Completed Advanced Vue.js Course.",
-    image: "https://your-image-url.com/vue-mastery.png",
+    logo: "", // leave empty to use an icon
+    icon: "mdi-vuejs", // use a relevant MDI icon!
+    date: "Jan 2024",
     link: "https://cert-url.com/vue-mastery",
   },
   {
     title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
     description: "Cloud fundamentals and AWS services.",
-    image: "https://your-image-url.com/aws-cert.png",
+    logo: "", // leave empty to use an icon
+    icon: "mdi-aws",
+    date: "May 2024",
     link: "https://cert-url.com/aws-cp",
+  },
+  {
+    title: "Google Professional Cloud Architect",
+    issuer: "Google",
+    description: "Designs and manages secure cloud solutions.",
+    logo: "",
+    icon: "mdi-google-cloud",
+    date: "Apr 2023",
+    link: "https://cert-url.com/google-cloud",
+  },
+  {
+    title: "General Certificate",
+    issuer: "My University",
+    description: "Awarded for academic excellence.",
+    logo: "",
+    icon: "mdi-certificate",
+    date: "June 2022",
+    link: "#",
   },
 ];
