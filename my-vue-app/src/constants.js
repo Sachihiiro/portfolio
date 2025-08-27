@@ -13,25 +13,60 @@ export const navItems = [
 
 export const projects = [
   {
-    title: "Blue Portfolio",
-    description: "A portfolio template using only two blue hues.",
+    title: "Smart Agriculture Dashboard",
+    description:
+      "IoT-powered platform for real-time farm monitoring and analytics.",
+    image:
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+    demo: "https://smart-agri-demo.com",
+    github: "https://github.com/yourusername/smart-agriculture-dashboard",
+    techStack: "Vue.js, Node.js, AWS IoT, DynamoDB",
+    period: "2023 (6 months)",
+    details: `  
+      <p><strong>Overview:</strong> Developed a dashboard using Vue.js and AWS IoT for real-time visualization of sensor data from smart farms.</p>  
+      <ul>  
+        <li>Integrated with AWS Lambda and DynamoDB for backend processing.</li>  
+        <li>Implemented real-time notifications and data analytics.</li>  
+        <li><strong>Impact:</strong> Helped increase yields for 50+ local farmers.</li>  
+      </ul>  
+    `,
+  },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "Modern, responsive web portfolio for showcasing my skills and projects.",
     image:
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
-    link: "https://github.com/yourusername/blue-portfolio",
+    demo: "https://yourname.com",
+    github: "https://github.com/yourusername/portfolio",
+    techStack: "Vue.js, Vuetify, Netlify",
+    period: "2024 (Ongoing)",
+    details: `  
+      <p>Designed and built my personal developer portfolio with Vue and Vuetify, featuring:</p>  
+      <ul>  
+        <li>Animated transitions and mobile-first design</li>  
+        <li>Contact form integration with email notification</li>  
+        <li>Dynamic project and experience sections</li>  
+      </ul>  
+    `,
   },
   {
-    title: "Vue Weather App",
-    description: "Weather app using Vue 3 and a blue UI.",
-    image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
-    link: "https://github.com/yourusername/vue-weather-app",
-  },
-  {
-    title: "Minimal Blog",
-    description: "A blog platform built with Vue and Firebase.",
+    title: "E-commerce API Service",
+    description:
+      "Scalable backend API for online stores with payment integration.",
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-    link: "https://github.com/yourusername/minimal-blog",
+    demo: "",
+    github: "https://github.com/yourusername/ecommerce-api",
+    techStack: "Node.js, Express, PostgreSQL, AWS",
+    period: "2022 (3 months)",
+    details: `  
+      <p>Developed a RESTful API service supporting multiple store fronts:</p>  
+      <ul>  
+        <li>Authentication, payment integration, inventory management</li>  
+        <li>Deployed on AWS with CI/CD pipelines</li>  
+      </ul>  
+    `,
   },
 ];
 

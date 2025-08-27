@@ -44,13 +44,22 @@
               </div>
               <v-card-actions class="justify-end" style="padding-bottom: 32px">
                 <v-btn
-                  :href="project.link"
+                  :href="project.demo"
                   target="_blank"
                   :color="deepBlue"
                   variant="flat"
                   class="white--text"
+                  v-if="project.demo"
                 >
-                  View
+                  Live Demo
+                </v-btn>
+                <v-btn
+                  color="primary"
+                  variant="text"
+                  @click="openDetails(project)"
+                  style="margin-left: 8px"
+                >
+                  Details
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -58,15 +67,34 @@
         </v-carousel>
       </v-col>
     </v-row>
+
+    <ProjectDetailsModal
+      v-model="dialog"
+      :project="selectedProject"
+      @close="dialog = false"
+    />
   </section>
 </template>
-
 <script setup>
+import { ref } from "vue";
+import ProjectDetailsModal from "./Modal/ProjectDetailsModal.vue";
 defineProps(["projects", "deepBlue", "lightBlue"]);
+const dialog = ref(false);
+const selectedProject = ref({});
+
+function openDetails(project) {
+  selectedProject.value = project;
+  dialog.value = true;
+}
 </script>
 
 <style scoped>
 .section {
   padding: 64px 0 32px 0;
+}
+
+.features-list {
+  padding-left: 2.5em;
+  margin-bottom: 0.5em;
 }
 </style>
