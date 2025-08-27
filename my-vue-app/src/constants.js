@@ -147,6 +147,7 @@ export const articles = [
     summary:
       "A step-by-step guide to creating a professional portfolio site using Vue.js and Vuetify.",
     link: "#",
+    image: "https://picsum.photos/seed/vue1/600/400",
   },
   {
     title: "Deploying Vue Apps on AWS",
@@ -154,6 +155,7 @@ export const articles = [
     summary:
       "Learn how to deploy your Vue applications on AWS using S3, CloudFront, and CI/CD.",
     link: "#",
+    image: "https://picsum.photos/seed/aws/600/400",
   },
   {
     title: "Mastering Vue 3 Composition API",
@@ -161,6 +163,7 @@ export const articles = [
     summary:
       "An in-depth look at the Vue 3 Composition API for scalable front-end apps.",
     link: "#",
+    image: "https://picsum.photos/seed/composition/600/400",
   },
   {
     title: "State Management in Vue with Pinia",
@@ -168,6 +171,7 @@ export const articles = [
     summary:
       "A modern approach to state management using Pinia in Vue applications.",
     link: "#",
+    image: "https://picsum.photos/seed/pinia/600/400",
   },
   {
     title: "Testing Vue Components with Vitest",
@@ -175,12 +179,14 @@ export const articles = [
     summary:
       "How to write fast and reliable tests for your Vue components using Vitest.",
     link: "#",
+    image: "https://picsum.photos/seed/vitest/600/400",
   },
   {
     title: "Integrating REST APIs with Axios in Vue",
     date: "January 2024",
     summary: "A guide to connecting your Vue apps to RESTful APIs with Axios.",
     link: "#",
+    image: "https://picsum.photos/seed/axios/600/400",
   },
   {
     title: "Vue Router Advanced Patterns",
@@ -188,6 +194,7 @@ export const articles = [
     summary:
       "Learn about lazy loading, nested routes, and navigation guards in Vue Router.",
     link: "#",
+    image: "https://picsum.photos/seed/router/600/400",
   },
   {
     title: "Building Reusable Components in Vue",
@@ -195,18 +202,21 @@ export const articles = [
     summary:
       "Best practices for making your Vue components reusable and maintainable.",
     link: "#",
+    image: "https://picsum.photos/seed/components/600/400",
   },
   {
     title: "Optimizing Vue Apps for Performance",
     date: "October 2023",
     summary: "Tips and tricks to make your Vue apps faster and more efficient.",
     link: "#",
+    image: "https://picsum.photos/seed/performance/600/400",
   },
   {
     title: "Styling Vue Apps with Vuetify",
     date: "September 2023",
     summary: "Harness the full power of Vuetify for beautiful, responsive UIs.",
     link: "#",
+    image: "https://picsum.photos/seed/vuetify/600/400",
   },
 ];
 

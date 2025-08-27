@@ -12,8 +12,22 @@
       v-model="drawer"
       @navigate-and-close="navigateAndClose"
     />
+
     <v-main>
       <v-container fluid class="pa-0">
+        <!-- Under Construction Alert -->
+        <v-alert
+          type="warning"
+          color="orange-darken-2"
+          border="start"
+          elevation="2"
+          icon="mdi-alert"
+          prominent
+          closable
+        >
+          🚧 This page is under construction. Some features may not be fully
+          available. Some sections may be incomplete. Please check back later!
+        </v-alert>
         <HeroSection :deepBlue="deepBlue" :lightBlue="lightBlue" />
         <SkillsSection
           :skills="skills"

@@ -27,6 +27,25 @@
         style="display: flex; justify-content: center"
       >
         <v-card outlined class="article-card">
+          <!-- Article Thumbnail -->
+          <v-img
+            v-if="article.image"
+            :src="article.image"
+            class="article-thumb"
+            height="180"
+            width="100%"
+            cover
+            loading="lazy"
+          >
+            <template #placeholder>
+              <v-skeleton-loader
+                type="image"
+                height="180"
+                width="100%"
+                class="article-thumb-skeleton"
+              />
+            </template>
+          </v-img>
           <v-card-title>
             <a
               :href="article.link"
@@ -44,6 +63,19 @@
           <v-card-text class="article-summary">
             {{ article.summary }}
           </v-card-text>
+          <!-- Read More Button -->
+          <v-card-actions>
+            <v-btn
+              :href="article.link"
+              target="_blank"
+              rel="noopener"
+              color="primary"
+              variant="outlined"
+              class="read-more-btn"
+            >
+              Read More
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
