@@ -3,6 +3,11 @@
     <h2 class="text-center mb-6 font-weight-bold" :style="{ color: deepBlue }">
       Services
     </h2>
+    <!-- Mention types of clients served -->
+    <div class="text-center mb-6 grey--text text--darken-2">
+      I work with startups, small businesses, and enterprises to deliver
+      tailored solutions.
+    </div>
     <v-container>
       <v-row justify="center" align="stretch" class="gap-y-4">
         <v-col
@@ -31,12 +36,28 @@
           </v-card>
         </v-col>
       </v-row>
+      <!-- Call-to-Action Button with encouragement -->
+      <div class="text-center mt-8">
+        <div class="mb-2 grey--text text--darken-1">
+          Ready to discuss your project? Let's build something great together!
+          <br />
+          <span class="font-italic"
+            >Trusted by startups and enterprises. I typically respond within 24
+            hours.</span
+          >
+        </div>
+        <v-btn color="primary" large href="#contact" aria-label="Get a Quote">
+          GET A QUOTE
+        </v-btn>
+      </div>
     </v-container>
   </section>
 </template>
+
 <script setup>
 defineProps(["services", "deepBlue", "lightBlue"]);
 </script>
+
 <style scoped>
 .service-card {
   min-height: 180px;
